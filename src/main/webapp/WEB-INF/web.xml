@@ -72,7 +72,7 @@
 		<exception-type>java.lang.ArithmeticException</exception-type>
 		<location>/pages/erroraritmetico.html</location>
 	</error-page>
-	<listener>
+<!--	<listener>
 		<listener-class>ec.ocwcd.listener.ListenerParametro</listener-class>
 	</listener>
 	<listener>
@@ -87,7 +87,7 @@
 	</listener>
 	<listener>
 		<listener-class>ec.ocwcd.cap5.ServletRequestWebAttributeListener</listener-class>
-	</listener>
+	</listener>-->
 	<context-param>
 		<param-name>apptitle</param-name>
 		<param-value>Prueba titutlo</param-value>
