@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	version="3.0"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+	<description>Internet Servlet OCWCD</description>
+	<display-name>internet</display-name>
+
+	<servlet>
+		<servlet-name>PostServlet</servlet-name>
+		<servlet-class>ec.ocwcd.servlet.PostServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ServletPruebaCap3</servlet-name>
+		<servlet-class>ec.ocwcd.servlet.ServletPruebaCap3</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ServletContextParameterCap4</servlet-name>
+		<servlet-class>ec.ocwcd.servlet.ServletContextParameterCap4</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ServletInitParameterCap4</servlet-name>
+		<servlet-class>ec.ocwcd.servlet.ServletInitParameterCap4</servlet-class>
+		<init-param>
+			<param-name>prueba1</param-name>
+			<param-value>PRUEBA1</param-value>
+		</init-param>
+		<init-param>
+			<param-name>prueba2</param-name>
+			<param-value>PRUEBA2</param-value>
+		</init-param>
+	</servlet>
+	<servlet>
+		<servlet-name>ServletCounterParameterCap4</servlet-name>
+		<servlet-class>ec.ocwcd.servlet.ServletCounterParameterCap4</servlet-class>
+	</servlet>
+
+
+	<servlet>
+		<servlet-name>ListenerAtributoServelet</servlet-name>
+		<servlet-class>ec.ocwcd.servlet.ListenerAtributoServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>MathErrorServelet</servlet-name>
+		<servlet-class>ec.ocwcd.servlet.MathErrorServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PostServlet</servlet-name>
+		<url-pattern>/pages/servletPost</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ServletPruebaCap3</servlet-name>
+		<url-pattern>/pages/servletPruebaCap3</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ServletInitParameterCap4</servlet-name>
+		<url-pattern>/pages/servletInitParameterCap4</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ServletCounterParameterCap4</servlet-name>
+		<url-pattern>/pages/servletCounterParameterCap4</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ListenerAtributoServelet</servlet-name>
+		<url-pattern>/pages/listenerAtributoPost</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>MathErrorServelet</servlet-name>
+		<url-pattern>/pages/servletMathError</url-pattern>
+	</servlet-mapping>
+	<error-page>
+		<exception-type>java.lang.ArithmeticException</exception-type>
+		<location>/pages/erroraritmetico.html</location>
+	</error-page>
+	<listener>
+		<listener-class>ec.ocwcd.listener.ListenerParametro</listener-class>
+	</listener>
+	<listener>
+		<display-name>ListenerContexto</display-name>
+		<listener-class>ec.ocwcd.cap4.ServletContextoWebListener</listener-class>
+	</listener>
+	<listener>
+		<listener-class>ec.ocwcd.cap4.ServletContextWebAttributeListener</listener-class>
+	</listener>
+	<listener>
+		<listener-class>ec.ocwcd.cap5.ServletRequestWebListener</listener-class>
+	</listener>
+	<listener>
+		<listener-class>ec.ocwcd.cap5.ServletRequestWebAttributeListener</listener-class>
+	</listener>
+	<context-param>
+		<param-name>apptitle</param-name>
+		<param-value>Prueba titutlo</param-value>
+	</context-param>
+	<context-param>
+		<param-name>hitcounter</param-name>
+		<param-value>zzzzzz</param-value>
+	</context-param>
+	<error-page>
+		<error-code>400</error-code>
+		<location>/error/error_400.html</location>
+	</error-page>
+</web-app>
