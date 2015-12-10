@@ -22,4 +22,9 @@ public class Persona implements IPersona {
     public void setEdad(int edad) {
         this.edad = edad;
     }
+
+    @Override
+    public String toString(){
+        return "NOMBRE:"+nombre+"-"+"EDAD:"+edad;
+    }
 }

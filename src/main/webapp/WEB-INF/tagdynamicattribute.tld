@@ -1,0 +1,20 @@
+<taglib>
+    <tlib-version>1.0</tlib-version>
+    <jsp-version>2.0</jsp-version>
+    <short-name>dynamic</short-name>
+    <uri>http://ocejwcd.ec/TagAtributoDinamico</uri>
+    <tag>
+        <name>tagdynamicattribute</name>
+        <tag-class>ec.ocwcd.cap18.TagAtributoDinamico</tag-class>
+        <attribute>
+            <name>dimension</name>
+            <required>true</required>
+            <type>java.lang.Integer</type>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <dynamic-attributes>true</dynamic-attributes>
+        <body-content>scriptless</body-content>
+    </tag>
+
+
+</taglib>
