@@ -14,22 +14,16 @@
                      value="15"></jsp:setProperty>
     <c:url value='../cap17/pagina prueba.jsp' var="ruta" scope="page"></c:url>
     <din:tagdynamicattribute dimension="2" nombreTabla="TABLA PERSONA" persona='${persona}'>
-
         <jsp:attribute name="tipoSangre">B+</jsp:attribute>
         <jsp:attribute name="genero">MASCULINO</jsp:attribute>
         <jsp:attribute name="url">
         <a href="${ruta}">PAGINA PRUEBA SIN SLASH</a>
         </jsp:attribute>
-
-
         <jsp:body>
             SIN ESPACION NO FUNCIONA
         </jsp:body>
-
     </din:tagdynamicattribute>
     <br>RESTO DEL CUERPO DE LA PAGINA</br>
     </body>
     </html>
-
-
 </jsp:root>

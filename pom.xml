@@ -25,6 +25,11 @@
 	</properties>
 	<dependencies>
 		<dependency>
+			<artifactId>jar-taglib</artifactId>
+			<groupId>ec.taglib.tld</groupId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
 			<version>${log4j.version}</version>

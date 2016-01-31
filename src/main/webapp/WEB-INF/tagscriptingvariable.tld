@@ -1,0 +1,30 @@
+<taglib>
+    <tlib-version>1.0</tlib-version>
+    <jsp-version>2.0</jsp-version>
+    <short-name>scriptingvariable</short-name>
+    <uri>http://ocejwcd.ec/TagScriptingVariable</uri>
+    <tag>
+        <name>scriptingvariable</name>
+        <tag-class>ec.ocwcd.cap18.TagScriptingVariable</tag-class>
+        <attribute>
+            <name>id</name>
+            <type>java.lang.String</type>
+            <required>true</required>
+        </attribute>
+        <attribute>
+            <name>scope</name>
+            <type>java.lang.String</type>
+            <required>false</required>
+        </attribute>
+        <attribute>
+            <name>type</name>
+            <type>java.lang.String</type>
+            <required>true</required>
+        </attribute>
+        <attribute>
+            <name>value</name>
+            <type>java.lang.Object</type>
+            <rtexprvalue>yes</rtexprvalue>
+        </attribute>
+    </tag>
+</taglib>
